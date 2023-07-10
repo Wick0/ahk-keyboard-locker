@@ -40,6 +40,8 @@ initialize()
 	} else if (!settings.HideTooltips()) {
 		TrayTip,,% "Press " . settings.ShortcutHint() . " to lock your keyboard",10,1
 	}
+	Menu,Tray,Default, Lock keyboard ; changes the menu's default item to be "Lock/Unlock keyboard" and makes its font bold
+	Menu,Tray,Click,1 ;  allows single-click to activate default menu item
 }
 
 ;callback for when the keyboard shortcut is pressed
